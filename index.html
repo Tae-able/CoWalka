@@ -591,6 +591,95 @@
         </div>
     </section>
 
+
+
+
+    <!-- Swiper CSS (CDN) -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+<section id="testimonials" class="py-24 md:py-32 relative bg-surface-50 border-t border-zinc-200 overflow-hidden">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="mb-16 md:mb-24 flex flex-col md:flex-row md:items-end justify-between gap-8">
+      <div class="max-w-2xl">
+        <h2 class="text-4xl md:text-5xl font-bold text-zinc-900 tracking-tight leading-snug break-keep-all mb-4">
+          일상을 되찾은 사람들의 이야기
+        </h2>
+        <p class="text-zinc-500 text-lg leading-relaxed break-keep-all">
+          "예전엔 조용한 골목을 지날 때 조금 더 빨리 걷곤 했어요. 이제는 누군가 함께 걷고 있다는 감각이 생깁니다."
+        </p>
+      </div>
+    </div>
+
+    <!-- Swiper Container -->
+    <div class="swiper testimonial-swiper !pb-12">
+      <div class="swiper-wrapper">
+        <!-- 리뷰 1 -->
+        <div class="swiper-slide">
+          <div class="bg-white border border-zinc-100 rounded-[2rem] p-8 shadow-sm h-full">
+            <div class="flex items-center gap-4 mb-6">
+              <img src="https://i.pravatar.cc/150?u=hayoonsuh" alt="User 1" class="w-12 h-12 rounded-full object-cover">
+              <div>
+                <h4 class="text-zinc-900 font-bold">User 1</h4>
+                <p class="text-xs text-zinc-500">디자이너, 퇴근 시간대 오후 9시</p>
+              </div>
+            </div>
+            <p class="text-zinc-600 leading-relaxed break-keep-all text-sm">
+              "야근이 잦아서 매번 밤늦게 퇴근하는데, 통화할 친구를 억지로 찾지 않아도 안나가 먼저 말을 걸어주니 마음이 편해요."
+            </p>
+          </div>
+        </div>
+
+        <!-- 리뷰 2 -->
+        <div class="swiper-slide">
+          <div class="bg-white border border-zinc-100 rounded-[2rem] p-8 shadow-sm h-full">
+            <div class="flex items-center gap-4 mb-6">
+              <img src="https://i.pravatar.cc/150?u=parkdohyun" alt="User 2" class="w-12 h-12 rounded-full object-cover">
+              <div>
+                <h4 class="text-zinc-900 font-bold">User 2</h4>
+                <p class="text-xs text-zinc-500">마케터, 퇴근 시간대 오후 7시</p>
+              </div>
+            </div>
+            <p class="text-zinc-600 leading-relaxed break-keep-all text-sm">
+              "가장 든든한 건 패닉링 시스템이에요. 제가 말을 못하거나 손을 쓸 수 없는 상황이어도 보호막 같습니다."
+            </p>
+          </div>
+        </div>
+
+        <!-- 여기에 리뷰 3, 4, 5, 6 동일한 구조로 추가 -->
+        <!-- ... -->
+
+      </div>
+      <!-- 하단 점 표시 (Pagination) -->
+      <div class="swiper-pagination !-bottom-2"></div>
+    </div>
+  </div>
+</section>
+
+<!-- Swiper JS (CDN) -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <style>
+  /* 슬라이드 높이 균일하게 */
+  .testimonial-swiper .swiper-slide {
+    height: auto;
+  }
+  
+  /* 페이지네이션 점 색상 커스텀 */
+  .testimonial-swiper .swiper-pagination-bullet-active {
+    background: #18181b; /* zinc-900 */
+    width: 24px;
+    border-radius: 10px;
+    transition: all 0.3s;
+  }
+  
+  /* 슬라이더 밖으로 카드가 잘리지 않게 조정 */
+  .swiper {
+    padding: 20px !important;
+    margin: -20px !important;
+  }
+</style>
+
+    
 <section id="testimonials" class="py-24 md:py-32 relative bg-surface-50 border-t border-zinc-200">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="mb-16 md:mb-24 flex flex-col md:flex-row md:items-end justify-between gap-8" id="el-e5xq1y240" style="">
@@ -1112,41 +1201,34 @@
     </script>
 
 
-    <script>
-        const swiper = new Swiper('.swiper-container', {
-  // 옵션 설정
-  slidesPerView: 1, // 기본적으로 모바일에서는 1개
-  spaceBetween: 20, // 슬라이드 사이 간격
-  loop: true,       // 무한 반복
-  
-  // 자동 재생 (필요 없으면 삭제)
-  autoplay: {
-    delay: 3000,
-    disableOnInteraction: false,
-  },
-
-  // 하단 점 표시
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
-
-  // 좌우 화살표
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-
-  // 반응형 설정 (화면 크기에 따라 보여주는 개수 조절)
-  breakpoints: {
-    640: {
-      slidesPerView: 2,
+<script>
+  const swiper = new Swiper('.testimonial-swiper', {
+    slidesPerView: 1.2, // 모바일에서 다음 카드가 살짝 보이게 (넘기고 싶게 만듦)
+    centeredSlides: true,
+    spaceBetween: 20,
+    loop: true,
+    grabCursor: true, // 마우스 커서를 손모양으로
+    
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
     },
-    1024: {
-      slidesPerView: 3, // 데스크탑에서는 3개씩 노출
+    
+    // 반응형 설정
+    breakpoints: {
+      // 태블릿 이상
+      768: {
+        slidesPerView: 2,
+        centeredSlides: false,
+      },
+      // 데스크탑 이상
+      1024: {
+        slidesPerView: 2.5, // 3개를 다 보여주거나 2.5개로 여운을 줌
+        spaceBetween: 30,
+        centeredSlides: false,
+      }
     }
-  }
-});
-    </script>
+  });
+</script>
 </body>
 </html>
