@@ -500,7 +500,11 @@
                         <div class="p-8 pb-0 relative z-10 flex-1">
                             <span class="inline-block px-3 py-1 bg-red-500/10 text-red-400 text-xs font-bold rounded-full mb-4">2차 패닉링</span>
                             <h3 class="text-2xl md:text-3xl font-bold text-white mb-3 break-keep-all">터치 앤 홀드,<br>언제든 바로!</h3>
-                            <p class="text-zinc-400 text-sm leading-relaxed break-keep-all">패닉 링으로 위험 상황에 대응해요.<br> 손을 떼는 순간, 패닉 리포트**가 보호자에게 즉시 작동합니다.</p>
+                            <p class="text-zinc-400 text-sm leading-relaxed break-keep-all">패닉 링으로 위험 상황에 대응해요.<br>
+                                손을 떼는 순간, 사전 등록된 보호자에게 SOS 메세지를 즉시 전송합니다. 이를 통해 보호자는 빠르게 대리 신고를 할 수 있습니다.</p>
+<!--
+                                패닉 리포트*(유료 플랜)가 보호자에게 즉시 전송됩니다.
+                            -->
                         </div>
                         
                         <div class="relative w-full flex justify-center pt-8 px-6 mt-auto">
@@ -531,9 +535,11 @@
                     <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-48 h-48 bg-brand-400/10 blur-[60px] rounded-full pointer-events-none group-hover:bg-brand-400/20 supanova-transition"></div>
                     <div class="relative h-full min-h-[540px] rounded-[calc(2.5rem-0.375rem)] bg-zinc-900 shadow-[inset_0_1px_1px_rgba(255,255,255,0.1)] flex flex-col overflow-hidden">
                         <div class="p-8 pb-0 relative z-10 flex-1">
-                            <span class="inline-block px-3 py-1 bg-brand-500/10 text-brand-400 text-xs font-bold rounded-full mb-4">3차 자동 전송</span>
+                            <span class="inline-block px-3 py-1 bg-brand-500/10 text-brand-400 text-xs font-bold rounded-full mb-4">3차 패닉 리포트</span>
+                            <span class="inline-block px-3 py-1 bg-brand-500/10 text-brand-400 text-xs font-bold rounded-full mb-4">유료 플랜</span>
                             <h3 class="text-2xl md:text-3xl font-bold text-white mb-3 break-keep-all">지체 없이<br>보호자에게 상황 전달</h3>
                             <p class="text-zinc-400 text-sm leading-relaxed break-keep-all">사용자의 안전이 지속적으로 확인되지 않을 경우, 나의 실시간 위치와 주변 녹음 기록이 보호자에게 즉시 전송됩니다.</p>
+
                         </div>
                         
                         <div class="relative w-full flex justify-center pt-8 px-6 mt-auto">
@@ -583,14 +589,13 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div><br><br><br>
 
             <div class="mb-16 md:mb-24 text-center max-w-3xl mx-auto">
                 <h2 class="reveal text-4xl md:text-4xl lg:text-4xl font-bold text-white tracking-tight leading-snug break-keep-all mb-6 animate-in" style="--index: 1;">
                     구조 요청이 어려운 상황에서도 최대 5분 안에 위험 상황을 보호자가 알 수 있어요.<br>
-                    * 평균 4분 51초
                 </h2>
-                <p class="reveal text-lg text-zinc-400 break-keep-all animate-in" style="--index: 2;"></p>
+                <p class="reveal text-lg text-zinc-400 break-keep-all animate-in" style="--index: 2;">* 평균 4분 51초</p>
             </div>
             
         </div><br><br><br>
@@ -1046,7 +1051,7 @@
                 <div class="reveal bg-surface-50 border border-zinc-200 rounded-[2rem] p-8 flex flex-col h-full supanova-transition hover:border-zinc-300 hover:shadow-sm">
                     <h3 class="text-xl font-bold text-zinc-900 mb-2">무료</h3>
                     <div class="text-3xl font-display font-bold text-zinc-900 mb-6">₩0 <span class="text-sm text-zinc-500 font-normal">/ 영구</span></div>
-                    <p class="text-zinc-500 text-sm mb-8 break-keep-all h-10">CO-WALKA 동행 기능</p>
+                    <p class="text-zinc-500 text-sm mb-8 break-keep-all h-10">CoWalka 동행 기능</p>
                     
                     <ul class="space-y-4 mb-8 flex-1">
                         <li class="flex items-start gap-3 text-sm text-zinc-700">
@@ -1055,11 +1060,7 @@
                         </li>
                         <li class="flex items-start gap-3 text-sm text-zinc-700">
                             <iconify-icon icon="solar:check-circle-bold" class="text-zinc-400 mt-0.5 text-lg"></iconify-icon>
-                            <span>패닉 링</span>
-                        </li>
-                        <li class="flex items-start gap-3 text-sm text-zinc-700">
-                            <iconify-icon icon="solar:check-circle-bold" class="text-zinc-400 mt-0.5 text-lg"></iconify-icon>
-                            <span>감정 레이어 맵</span>
+                            <span>패닉 링<br></span>
                         </li>
                     </ul>
                     <a href="#download" class="w-full block text-center py-4 rounded-xl border border-zinc-200 bg-white text-zinc-800 font-bold supanova-transition hover:bg-zinc-50">무료로 시작하기</a>
@@ -1080,11 +1081,11 @@
                         </li>
                         <li class="flex items-start gap-3 text-sm text-zinc-300">
                             <iconify-icon icon="solar:check-circle-bold" class="text-brand-400 mt-0.5 text-lg"></iconify-icon>
-                            <span>주간 / 월간 귀가 리포트 제공</span>
+                            <span>패닉 링, 패닉 리포트</span>
                         </li>
                         <li class="flex items-start gap-3 text-sm text-zinc-300">
                             <iconify-icon icon="solar:check-circle-bold" class="text-brand-400 mt-0.5 text-lg"></iconify-icon>
-                            <span>프리미엄 안나 대화</span>
+                            <span>친구 추가</span>
                         </li>
                     </ul>
                     <a href="#download" class="w-full block text-center py-4 rounded-xl bg-brand-600 text-white font-bold supanova-transition hover:bg-brand-500 shadow-md">구독하기</a>
@@ -1106,7 +1107,7 @@
             </p>
             <div class="reveal">
                 <a href="#download" class="inline-flex items-center justify-center rounded-full bg-zinc-900 px-10 py-5 text-xl font-bold text-white supanova-transition hover:bg-zinc-800 hover:scale-[1.02] active:scale-[0.98] shadow-xl">
-                    오늘 귀가 시작
+                    퇴근 준비 시작
                     <iconify-icon icon="solar:arrow-right-linear" class="ml-2 text-2xl"></iconify-icon>
                 </a>
             </div>
@@ -1134,7 +1135,7 @@
                 </div>
             </div>
             <div class="mt-8 text-center md:text-left text-zinc-400 text-xs">
-                &copy; 2026 CO-WALKA Inc. All rights reserved.
+                &copy; 2026 CoWalka Inc. All rights reserved.
             </div>
         </div>
     </footer>
