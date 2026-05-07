@@ -602,9 +602,9 @@
                         
                         <div class="relative w-full flex justify-center pt-8 px-6 mt-auto">
                             <!-- Phone Mockup 3 -->
-                            <div class="w-full max-w-[260px] h-[340px] bg-zinc-950 rounded-t-[2.5rem] border-x-4 border-t-4 border-zinc-800 relative overflow-hidden shadow-2xl translate-y-2 group-hover:translate-y-0 supanova-transition flex flex-col">
+                            <div class="w-full max-w-[260px] h-[400px] bg-zinc-950 rounded-t-[2.5rem] border-x-4 border-t-4 border-zinc-800 relative overflow-hidden shadow-2xl translate-y-2 group-hover:translate-y-0 supanova-transition flex flex-col">
                                 <div class="absolute inset-0 bg-zinc-900 z-0">
-                                    <div class="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/80 to-transparent"></div>
+                                    <div class="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/50 to-transparent"></div>
                                 </div>
                                 <div class="absolute top-0 w-full h-6 flex justify-center z-10"><div class="w-16 h-3 bg-black rounded-b-lg"></div></div>
                                 
@@ -622,22 +622,37 @@
                                     
                                     <!-- Data List -->
                                     <div class="bg-zinc-800/90 backdrop-blur-md rounded-xl p-4 border border-white/10 shadow-lg space-y-4 mx-1">
+                                        <!-- 현재 위치 정보 -->
                                         <div class="flex items-center gap-3">
                                             <div class="w-8 h-8 rounded-full bg-brand-500/20 flex items-center justify-center shrink-0">
                                                 <iconify-icon icon="solar:map-point-bold" class="text-brand-400 text-sm"></iconify-icon>
                                             </div>
                                             <div>
-                                                <p class="text-zinc-400 text-[10px] mb-0.5">실시간 위치 정보</p>
+                                                <p class="text-zinc-400 text-[10px] mb-0.5">현재 위치 정보</p>
                                                 <p class="text-zinc-200 text-xs font-medium tracking-tight">인천광역시 연수구 송도동</p>
                                             </div>
                                         </div>
+                                        <!-- 이동 경로 -->
+                                        <div class="flex items-center gap-3">
+                                            <div class="w-8 h-8 rounded-full bg-brand-500/20 flex items-center justify-center shrink-0">
+                                                <iconify-icon icon="solar:map-point-bold" class="text-brand-400 text-sm"></iconify-icon>
+                                            </div>
+                                            <div>
+                                                <p class="text-zinc-400 text-[10px] mb-0.5">이동 경로</p>
+                                                <p class="text-zinc-200 text-xs font-medium tracking-tight">도착 예정 시간 • 오후 7시 40분</p>
+                                                <p class="text-zinc-200 text-xs font-medium tracking-tight">소요 시간 • 35분</p>
+                                                <p class="text-zinc-200 text-xs font-medium tracking-tight">출발지 • 회사</p>
+                                                <p class="text-zinc-200 text-xs font-medium tracking-tight">목적지 • 집</p>
+                                            </div>
+                                        </div>
+                                        <!-- 챗봇 대화 분석 리포트 -->
                                         <div class="flex items-center gap-3">
                                             <div class="w-8 h-8 rounded-full bg-brand-500/20 flex items-center justify-center shrink-0">
                                                 <iconify-icon icon="solar:danger-triangle-bold" class="text-brand-400 text-sm"></iconify-icon>
                                             </div>
                                             <div>
-                                                <p class="text-zinc-400 text-[10px] mb-0.5">현장 주변 음성</p>
-                                                <p class="text-zinc-200 text-xs font-medium tracking-tight">10초 녹음 파일 첨부</p>
+                                                <p class="text-zinc-400 text-[10px] mb-0.5">챗봇 대화 분석 리포트</p>
+                                                <p class="text-zinc-200 text-xs font-medium tracking-tight">이동하는 동안 나눈 대화 내용을 분석하여 안심 구간, 주의 구간, 감정 표현에 대한 내용을 요약한 리포트</p>
                                             </div>
                                         </div>
                                     </div>
