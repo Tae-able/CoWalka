@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> cowalka | 코워카와 함께할 준비 </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+        body { font-family: 'Pretendard', sans-serif; }
+        .orange-point { color: #FF5A1F; }
+        .bg-orange-point { background-color: #FF5A1F; }
+    </style>
+</head>
+<body class="bg-[#F8F9FA] min-h-screen flex items-center justify-center p-6">
+
+    <div class="max-w-md w-full bg-white rounded-[32px] shadow-xl shadow-gray-100 overflow-hidden border border-gray-100">
+        <div class="bg-[#FFF5F0] py-12 flex justify-center">
+            <div class="relative">
+                <div class="w-24 h-24 bg-white rounded-full flex items-center justify-center shadow-sm border border-orange-100">
+                    <span class="text-4xl">🐹</span> 
+                </div>
+                <div class="absolute -bottom-2 -right-2 bg-orange-point text-white text-xs px-3 py-1 rounded-full shadow-md">
+                    준비 중!
+                </div>
+            </div>
+        </div>
+
+        <div class="p-8 text-center">
+            <h1 class="text-2xl md:text-3xl font-bold text-zinc-900 leading-tight mb-4">
+                코워카와 함께하는 <br>
+                <span class="orange-point">무사히 퇴근하기</span> 프로젝트!
+            </h1>
+            
+            <p class="text-zinc-600 leading-relaxed mb-8">
+                관심을 가져주셔서 정말 감사해요!<br>
+                더 다정하고 꼼꼼한 <strong>코워카</strong>를 만들기 위해<br>
+                지금은 열심히 마지막 준비를 하고 있어요.
+            </p>
+
+            <div class="bg-gray-50 rounded-2xl p-5 mb-8 text-left">
+                <p class="text-sm font-semibold text-zinc-800 mb-2">🎁 사전 신청자 한정 혜택</p>
+                <ul class="text-sm text-zinc-500 space-y-2">
+                    <li class="flex items-start">
+                        <span class="orange-point mr-2">✓</span> 정식 출시 후 첫 달 무료 이용권
+                    </li>
+                    <li class="flex items-start">
+                        <span class="orange-point mr-2">✓</span> '무사히 도착' 한정판 배지 증정
+                    </li>
+                </ul>
+            </div>
+
+            <form class="space-y-4">
+                <div>
+                    <input type="email" placeholder="이메일 주소를 남겨주세요" 
+                        class="w-full px-5 py-4 bg-gray-100 border-none rounded-2xl focus:ring-2 focus:ring-orange-400 outline-none transition-all text-zinc-800">
+                </div>
+                <button type="submit" 
+                    class="w-full bg-orange-point hover:bg-[#E84F18] text-white font-bold py-4 rounded-2xl shadow-lg shadow-orange-200 transition-all transform active:scale-[0.98]">
+                    출시 알림 및 혜택 받기
+                </button>
+            </form>
+
+            <button onclick="history.back()" class="mt-6 text-sm text-zinc-400 hover:text-zinc-600 underline">
+                이전 페이지로 돌아가기
+            </button>
+        </div>
+    </div>
+
+</body>
+</html>
