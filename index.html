@@ -481,17 +481,19 @@
 
 
 
-
-<section id="features" class="py-24 md:py-36 relative">
+<!-- 카톡 VS 코워카 -->
+<section id="features" class="py-24 md:py-36 relative bg-gradient-to-b from-surface-100 from-[5%] to-[#292929] to-[95%]">
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[700px] bg-brand-500/5 blur-[140px] rounded-full pointer-events-none"></div>
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <!-- 헤더 부분 -->
-        <div class="text-center mb-16">
-            <h2 class="text-3xl md:text-4xl font-bold text-zinc-900 mb-4 tracking-tight">
-                왜 단순한 메신저가 아닌 <span class="text-brand-600">코워카</span>인가요?
+        <div class="mb-16 md:mb-24 text-center max-w-3xl mx-auto">
+            <h2 class="reveal text-4xl md:text-4xl lg:text-4xl font-bold text-zinc-700 tracking-tight leading-snug break-keep-all mb-6 animate-in" style="--index: 1;">
+                “그냥 카톡 쓰면 되지 왜 굳이 이 걸 써요?”
             </h2>
-            <p class="text-zinc-500">당신의 안전을 대하는 방식의 차이를 확인해보세요.</p>
+            <p class="text-zinc-600 text-lg leading-relaxed break-keep-all">
+                맞습니다. 매일 수백 번 켜는 카톡은 우리에게 가장 익숙하고 빠른 대화 채널입니다. 하지만…
+            </p>
         </div>
-
         <!-- 비교 컨테이너 -->
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
             
@@ -506,8 +508,7 @@
                     <!-- 일상 -->
                     <div class="flex gap-4">
                         <div class="mt-1 text-zinc-400 text-xl"><iconify-icon icon="solar:chat-line-linear"></iconify-icon></div>
-                        <div>
-                            <h4 class="text-zinc-900 font-bold mb-1">일상: 무심한 대화</h4>
+                        <div><h4 class="text-zinc-900 font-bold mb-1">일상: 무심한 대화</h4>
                             <p class="text-zinc-500 text-sm leading-relaxed">내가 먼저 말을 걸기 전까지는 아무런 반응이 없어요.</p>
                         </div>
                     </div>
@@ -515,8 +516,7 @@
                     <!-- 불안 -->
                     <div class="flex gap-4">
                         <div class="mt-1 text-zinc-400 text-xl"><iconify-icon icon="solar:map-point-linear"></iconify-icon></div>
-                        <div>
-                            <h4 class="text-zinc-900 font-bold mb-1">불안: 수동적인 위치 공유</h4>
+                        <div><h4 class="text-zinc-900 font-bold mb-1">불안: 수동적인 위치 공유</h4>
                             <p class="text-zinc-500 text-sm leading-relaxed">직접 지도를 캡처하거나 위치를 전송해야만 상황을 알릴 수 있어요.</p>
                         </div>
                     </div>
@@ -524,8 +524,7 @@
                     <!-- 위험 -->
                     <div class="flex gap-4">
                         <div class="mt-1 text-zinc-400 text-xl"><iconify-icon icon="solar:shield-warning-linear"></iconify-icon></div>
-                        <div>
-                            <h4 class="text-zinc-900 font-bold mb-1">위험: 사후 대처</h4>
+                        <div><h4 class="text-zinc-900 font-bold mb-1">위험: 사후 대처</h4>
                             <p class="text-zinc-500 text-sm leading-relaxed">위험이 닥친 후 전화를 하거나 구조 요청을 보내는 것 외엔 방법이 없어요.</p>
                         </div>
                     </div>
@@ -545,8 +544,7 @@
                         <!-- 일상 -->
                         <div class="flex gap-4">
                             <div class="mt-1 text-brand-600 text-xl"><iconify-icon icon="solar:chat-round-check-bold"></iconify-icon></div>
-                            <div>
-                                <h4 class="text-zinc-900 font-bold mb-1">일상: 먼저 챙겨주는 동행</h4>
+                            <div><h4 class="text-zinc-900 font-bold mb-1">일상: 먼저 챙겨주는 동행</h4>
                                 <p class="text-zinc-500 text-sm leading-relaxed">퇴근 2시간 전부터 배터리를 체크하고 귀가 준비를 함께해요.</p>
                             </div>
                         </div>
@@ -554,8 +552,7 @@
                         <!-- 불안 -->
                         <div class="flex gap-4">
                             <div class="mt-1 text-brand-600 text-xl"><iconify-icon icon="solar:routing-2-bold"></iconify-icon></div>
-                            <div>
-                                <h4 class="text-zinc-900 font-bold mb-1">불안: 실시간 안심 경로 안내</h4>
+                            <div><h4 class="text-zinc-900 font-bold mb-1">불안: 실시간 안심 경로 안내</h4>
                                 <p class="text-zinc-500 text-sm leading-relaxed text-balance">CCTV, 편의점 위주의 밝은 길을 골라주고 내 감정 기록을 기반으로 경로를 추천해요.</p>
                             </div>
                         </div>
@@ -563,179 +560,20 @@
                         <!-- 위험 -->
                         <div class="flex gap-4">
                             <div class="mt-1 text-brand-600 text-xl"><iconify-icon icon="solar:shield-check-bold"></iconify-icon></div>
-                            <div>
-                                <h4 class="text-zinc-900 font-bold mb-1">위험: 선제적 심리적 보호</h4>
+                            <div><h4 class="text-zinc-900 font-bold mb-1">위험: 선제적 심리적 보호</h4>
                                 <p class="text-zinc-500 text-sm leading-relaxed text-balance">단순한 경로 안내를 넘어 사용자의 감정을 기록하고 심리적 안정감을 제공합니다.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
 </section>
 
 
 
-
-    
-<!-- Compare Section -->
-<section id="features" class="py-24 md:py-36 relative bg-gradient-to-b from-surface-100 from-[5%] to-[#292929] to-[95%]">
-        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[700px] bg-brand-500/5 blur-[140px] rounded-full pointer-events-none"></div>
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="mb-16 md:mb-24 text-center max-w-3xl mx-auto">
-            <h2 class="reveal text-4xl md:text-4xl lg:text-4xl font-bold text-zinc-700 tracking-tight leading-snug break-keep-all mb-6 animate-in" style="--index: 1;">
-                “그냥 카톡 쓰면 되지 왜 굳이 이 걸 써요?”
-            </h2>
-            <p class="text-zinc-600 text-lg leading-relaxed break-keep-all">
-                맞습니다. 매일 수백 번 켜는 카톡은 우리에게 가장 익숙하고 빠른 대화 채널입니다. 하지만…
-            </p>
-        </div>
-
-        <!-- Compare Grid -->
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 items-start">
-            <!-- LEFT : 카톡 -->
-            <div class="relative rounded-[2.5rem] bg-white/5 p-1.5 ring-1 ring-white/10 backdrop-blur-xl">
-                <div class="rounded-[calc(2.5rem-0.375rem)] bg-zinc-900 p-8 md:p-10 h-full">
-                    <!-- Logo -->
-                    <div class="mb-10">
-                        <div class="inline-flex items-center gap-3">
-                            <div class="w-10 h-10 rounded-2xl bg-zinc-800 flex items-center justify-center">
-                                <iconify-icon icon="solar:chat-round-bold" class="text-zinc-300 text-xl"></iconify-icon>
-                            </div>
-                            <div><h3 class="text-3xl font-bold text-white tracking-tight"> 카톡 </h3></div>
-                        </div>
-                    </div>
-
-                    <!-- SECTION 1 -->
-                    <div class="mb-6">
-                        <div class="rounded-2xl bg-zinc-800 px-5 py-4 border border-white/5">
-                            <p class="text-zinc-300 text-sm font-semibold mb-1"> 일상 </p>
-                            <p class="text-zinc-500 text-sm"> 가장 익숙한 소통 수단 </p>
-                        </div>
-                        <div class="mt-5 space-y-3">
-                            <p class="text-zinc-500 italic leading-relaxed"> “지금은 자고 있겠지?” </p>
-                            <p class="text-zinc-500 italic leading-relaxed"> “괜히 연락하면 민폐 아닐까?” </p>
-                            <p class="text-zinc-500 italic leading-relaxed"> “별일 아닌데 내가 예민한 건가...” </p>
-                        </div>
-                    </div>
-
-                    <!-- SECTION 2 -->
-                    <div class="mb-6">
-                        <div class="rounded-2xl bg-zinc-800 px-5 py-4 border border-white/5">
-                            <p class="text-zinc-300 text-sm font-semibold mb-1"> 불안 </p>
-                            <p class="text-zinc-500 text-sm"> 설명해야만 도움을 받을 수 있는 구조 </p>
-                        </div>
-                        <div class="mt-5">
-                            <p class="text-zinc-400 leading-relaxed">
-                                누군가에게 먼저 연락하기까지 망설이게 되고, 결국 혼자 판단하고 버티게 됩니다.
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- SECTION 3 -->
-                    <div>
-                        <div class="rounded-2xl bg-zinc-800 px-5 py-4 border border-white/5">
-                            <p class="text-zinc-300 text-sm font-semibold mb-1"> 위험 </p>
-                            <p class="text-zinc-500 text-sm"> 응답이 끊기면 대응도 멈춥니다 </p>
-                        </div>
-                        <div class="mt-5">
-                            <div class="rounded-2xl bg-zinc-950 border border-red-500/10 p-5">
-                                <p class="text-zinc-500 leading-relaxed">
-                                    위험 상황에서는 직접 설명하거나 도움을 요청하기 어려운 순간이 많습니다.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- RIGHT : 코워카 -->
-            <div class="relative rounded-[2.5rem] bg-gradient-to-b from-brand-500/20 to-orange-500/10 p-1.5 ring-1 ring-brand-400/20 backdrop-blur-xl">
-                <!-- glow -->
-                <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-72 h-72 bg-brand-500/10 blur-[80px] rounded-full pointer-events-none"></div>
-                <div class="relative rounded-[calc(2.5rem-0.375rem)] bg-[#1f1f1f] p-8 md:p-10 h-full overflow-hidden">
-
-                    <!-- Logo -->
-                    <div class="mb-10">
-                        <div class="inline-flex items-center gap-3">
-                            <div class="w-10 h-10 rounded-2xl bg-brand-500/15 flex items-center justify-center">
-                                <iconify-icon icon="solar:shield-check-bold" class="text-brand-400 text-xl"></iconify-icon>
-                            </div>
-                            <div><h3 class="text-3xl font-bold text-white tracking-tight"> 코워카 </h3></div></div>
-                    </div>
-
-                    <!-- SECTION 1 -->
-                    <div class="mb-6">
-                        <div class="rounded-2xl bg-brand-500/10 border border-brand-500/20 px-5 py-4">
-                            <p class="text-brand-300 text-sm font-semibold mb-1"> 일상 </p>
-                            <p class="text-zinc-300 text-sm"> 평소의 안전 습관부터 함께 </p>
-                        </div>
-                        <div class="mt-5 space-y-4">
-                            <div class="flex gap-3 items-start">
-                                <div class="w-8 h-8 rounded-xl bg-brand-500/10 flex items-center justify-center shrink-0">
-                                    <iconify-icon icon="solar:moon-stars-bold" class="text-brand-400"></iconify-icon>
-                                </div>
-                                <p class="text-zinc-300 leading-relaxed"> “오늘 따라 골목이 너무 어둡네.” </p>
-                            </div>
-                            <div class="flex gap-3 items-start">
-                                <div class="w-8 h-8 rounded-xl bg-brand-500/10 flex items-center justify-center shrink-0">
-                                    <iconify-icon icon="solar:shield-warning-bold" class="text-brand-400"></iconify-icon>
-                                </div>
-                                <p class="text-zinc-300 leading-relaxed"> “누가 따라오는 것 같아.” </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- SECTION 2 -->
-                    <div class="mb-6">
-                        <div class="rounded-2xl bg-brand-500/10 border border-brand-500/20 px-5 py-4">
-                            <p class="text-brand-300 text-sm font-semibold mb-1"> 불안 </p>
-                            <p class="text-zinc-300 text-sm"> 작은 신호에도 먼저 반응합니다 </p>
-                        </div>
-                        <div class="mt-5 space-y-4">
-                            <div class="rounded-2xl bg-zinc-900 border border-brand-500/10 p-5">
-                                <p class="text-white font-semibold leading-relaxed mb-2"> “무서워” </p>
-                                <p class="text-white font-semibold leading-relaxed"> “누가 따라와” </p>
-                            </div>
-                            <p class="text-zinc-300 leading-relaxed">
-                                짧은 한마디만으로도 코워카는 사용자의 상태를 빠르게 확인하고 대응을 시작합니다.
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- SECTION 3 -->
-                    <div>
-                        <div class="rounded-2xl bg-brand-500/10 border border-brand-500/20 px-5 py-4">
-                            <p class="text-brand-300 text-sm font-semibold mb-1"> 위험 </p>
-                            <p class="text-zinc-300 text-sm"> 도움 요청이 어려운 순간까지 대비 </p>
-                        </div>
-                        <div class="mt-5">
-                            <div class="rounded-2xl bg-gradient-to-br from-red-500/10 to-brand-500/10 border border-red-500/20 p-5">
-                                <div class="flex items-start gap-4">
-                                    <div class="w-10 h-10 rounded-2xl bg-red-500/10 flex items-center justify-center shrink-0">
-                                        <iconify-icon icon="solar:danger-triangle-bold" class="text-red-400 text-lg"></iconify-icon>
-                                    </div>
-                                    <div>
-                                        <p class="text-white font-semibold mb-2"> 패닉 링 · 패닉 리포트 </p>
-                                        <p class="text-zinc-300 leading-relaxed text-sm">
-                                            응답이 끊겨도 현재 위치, 이동 흐름, 위험 신호를 보호자에게 자동 전달합니다.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-    
-    
-
+<!-- 패닉링, 패닉 리포트 -->
 <section id="features" class="py-24 md:py-36 relative" style="background-color: rgb(41, 41, 41);">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="mb-16 md:mb-24 text-center max-w-3xl mx-auto">
