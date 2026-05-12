@@ -483,7 +483,6 @@
 <section id="features" class="py-24 md:py-36 relative bg-surface-100 overflow-hidden">
     <!-- 배경 장식 -->
     <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[800px] bg-brand-600/5 blur-[140px] rounded-full pointer-events-none"></div>
-
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <!-- 헤더 -->
         <div class="mb-16 text-center max-w-3xl mx-auto">
@@ -491,20 +490,30 @@
                 “그냥 카톡 쓰면 되지 왜 굳이 이걸 써요?”
             </h2>
             <p class="text-zinc-600 text-lg break-keep-all">
-                익숙함 뒤에 숨겨진 불안의 순간들, 코워카는 그 지점부터 시작합니다.
+                맞습니다. 매일 수백 번 켜는 카톡은 우리에게 가장 익숙하고 빠른 대화 채널입니다. 하지만…
             </p>
         </div>
 
+
+
+        
         <!-- 비교 표 컨테이너 -->
         <div class="overflow-x-auto rounded-[2rem] shadow-2xl border border-zinc-200/50 bg-white/50 backdrop-blur-sm">
-            <table class="w-full text-left border-collapse min-w-[700px]">
-                <thead>
-                    <tr class="border-b border-zinc-200">
-                        <th class="p-8 text-xl font-bold text-zinc-400 bg-zinc-50/50 w-1/4">카톡</th>
-                        <th class="p-8 text-center text-zinc-300 w-12 text-2xl font-light italic">VS</th>
-                        <th class="p-8 text-xl font-bold text-brand-600 bg-brand-50/30 w-1/4">코워카 (Co-walka)</th>
-                    </tr>
-                </thead>
+        <!-- 카카오톡 VS 코워카 -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
+            <div class="flex flex-col">
+                <div class="flex items-center justify-center gap-2 mb-6 text-zinc-400">
+                    <span class="text-2xl font-bold text-zinc-900 uppercase tracking-widest"> 카카오톡 </span>
+                </div>
+            </div>
+            <div class="flex flex-col">
+                <div class="flex items-center justify-center gap-2 mb-6 text-brand-600">
+                    <span class="font-display font-bold text-zinc-900 text-lg tracking-tight">
+                        <img src="cowalka_logo.png" alt="코워카 로고" style="height: 30px; vertical-align: middle;">
+                    </span>
+                </div>
+            </div>
+            <table class="w-full text-left border-collapse min-w-[600px]">
                 <tbody class="divide-y divide-zinc-100">
                     <!-- 일상 섹션 -->
                     <tr class="group">
