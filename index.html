@@ -190,7 +190,7 @@
                 <div class="lg:col-span-6 relative reveal">
                     
                     <!-- 코워카 빼꼼 -->
-                    <div class="absolute -right-20 top-40 z-20 w-30 md:w-40 lg:w-60 animate-float transition-all duration-500 border-2 border-brand-500">
+                    <div class="absolute -right-22 top-40 z-20 w-30 md:w-40 lg:w-60 animate-float transition-all duration-500">
                         <img src="quokka_image_path.png" alt="cowalka" class="w-full h-auto object-contain drop-shadow-2xl" />
                     </div>
                     
@@ -225,19 +225,22 @@
                                     <div class="absolute inset-0 opacity-20" style="background-image: radial-gradient(#d1d5db 1px, transparent 1px); background-size: 20px 20px;"></div>
                                     <div class="absolute inset-0 bg-gradient-to-t from-surface-50 via-surface-50/80 to-transparent"></div>
                                 </div>
+
+                                
                                 <!-- Chat Bubbles -->
-                                <!-- 수정 후 -->
-                                <div class="relative z-10 h-[500px] overflow-y-auto p-6 flex flex-col gap-4 [ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+                                <div class="relative z-10 h-[500px] overflow-y-auto px-6 py-2 flex flex-col gap-4 [ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
                                     <!--
                                 수정 후 <div class="relative z-10 h-[500px] overflow-y-auto p-6 flex flex-col gap-4 scrollbar-hide">
                                 수정 전 <div class="relative z-10 flex-1 p-6 flex flex-col justify-end gap-4 pb-12">
                                     -->
-        <!-- 선이 포함된 시간 구분선 -->
-<div class="relative flex py-2 items-center">
-    <div class="flex-grow border-t border-zinc-300"></div>
-        <span class="text-zinc-500 text-[11px] px-3 py-1 rounded-full font-medium tracking-wider">오후 4:00</span>
-    <div class="flex-grow border-t border-zinc-300"></div>
-</div>
+
+                                    
+                                    <!-- 선이 포함된 시간 구분선 -->
+                                    <div class="relative flex py-2 items-center">
+                                        <div class="flex-grow border-t border-zinc-300"></div>
+                                            <span class="text-zinc-500 text-[11px] px-3 py-1 rounded-full font-medium tracking-wider">오후 4:00</span>
+                                        <div class="flex-grow border-t border-zinc-300"></div>
+                                    </div>
                                     <div class="self-start max-w-[85%] bg-white border border-zinc-100 rounded-2xl rounded-tl-sm px-4 py-3 shadow-sm">
                                         <p class="text-[14px] text-zinc-700 leading-snug break-keep-all">
                                             벌써 4시야. 슬슬 퇴근 준비 할까?<br>
@@ -354,7 +357,7 @@
 
                                     
                                     <!-- 빨간 원(패닉링) 버튼 영역 -->
-                                    <div class="self-start max-w-[85%] flex gap-3  bg-white px-4 py-3 bg-red-50 text-red-600 rounded-2xl shadow-sm border border-red-100">
+                                    <div class="self-start max-w-[85%] flex bg-white px-4 py-3 bg-red-50 text-red-600 rounded-2xl shadow-sm border border-red-100">
                                         <div class="relative w-16 h-16 flex items-center justify-center shrink-0">
                                             <!-- 맥박처럼 퍼지는 애니메이션 링 -->
                                             <div class="absolute w-full h-full rounded-full border border-red-500/20 animate-pulse-ring" style="animation-duration: 2.5s;"></div>
@@ -698,7 +701,7 @@
 
 
                                 <!-- 빨간 원(패닉링) 버튼 영역 -->                            
-                                <div class="self-start max-w-[85%] flex gap-3 bg-white px-4 py-3 bg-red-50 text-red-600 rounded-2xl shadow-sm border border-red-100">
+                                <div class="self-start max-w-[85%] flex bg-white px-4 py-3 bg-red-50 text-red-600 rounded-2xl shadow-sm border border-red-100">
                                         <div class="relative w-16 h-16 flex items-center justify-center shrink-0">
                                             <!-- 맥박처럼 퍼지는 애니메이션 링 -->
                                             <div class="absolute w-full h-full rounded-full border border-red-500/20 animate-pulse-ring" style="animation-duration: 2.5s;"></div>
@@ -709,12 +712,11 @@
                                                 <iconify-icon icon="solar:fingerprint-bold" class="text-white text-xl"></iconify-icon>
                                             </div>
                                         </div>
-                                    
                                         <!-- 텍스트 설명 영역 -->
                                         <div class="flex flex-col gap-0.5">
                                             <p class="text-xs font-bold text-red-400 uppercase tracking-tight">Emergency</p>
                                             <p class="text-[15px] font-extrabold leading-tight tracking-tight">
-                                                패닉링
+                                                원 터치 위기 버튼
                                             </p>
                                             <p class="text-[11px] text-red-500/70 font-medium"> 꼭 눌러서 보호 시작 </p>
                                         </div>
@@ -730,15 +732,6 @@
                                             animation: pulse-ring cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
                                         }
                                     </style>
-                            
-                            <div class="flex items-center gap-3 px-4 py-3 bg-red-50 text-red-600 rounded-2xl rounded-tl-none shadow-sm border border-red-100">
-                                <div class="w-8 h-8 rounded-xl bg-red-500/10 flex items-center justify-center shrink-0">
-                                    <iconify-icon icon="solar:siren-rounded-bold" class="text-red-500 text-lg"></iconify-icon>
-                                </div>
-                                <span class="text-sm font-bold leading-tight">
-                                    원 터치 위기 버튼
-                                </span>
-                            </div>
                         </div>
                         <p class="text-zinc-800 text-sm font-medium">
                             짧은 한마디면 충분합니다.<br>
