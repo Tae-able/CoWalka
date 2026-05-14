@@ -543,7 +543,7 @@
                         <div class="reveal inline-flex items-center gap-2 rounded-full px-4 py-1.5 bg-surface-50 border border-slate-200 text-slate-600 text-[13px] font-medium tracking-wide shadow-sm mb-8 animate-in" style="--index: 0;" id="el-u5pwqo43g">
                             <span style=""> 일상 대화 </span>
                         </div>
-                        <div class="flex flex-col gap-3 mb-6">
+                        <div class="flex flex-col gap-3 mb-6 items-end">
                             <span class="inline-block self-start px-4 py-2 bg-zinc-100 text-zinc-600 rounded-2xl rounded-tl-none text-sm shadow-sm">"나 지금 퇴근 중이야."</span>
                             <span class="inline-block self-start px-4 py-2 bg-zinc-100 text-zinc-600 rounded-2xl rounded-tl-none text-sm shadow-sm">"방금 집에 잘 도착했어."</span>
                         </div>
@@ -610,21 +610,13 @@
                             즉시 대응 시스템 가동
                         </div>
 
-                            <div class="rounded-2xl bg-gradient-to-br from-red-500/10 to-brand-500/10 border border-red-500/20 p-5 mt-5">
+                            <div class="rounded-2xl bg-red-500/10 border border-red-500/20 p-5 mt-5">
                                 <div class="flex items-start gap-4">
                                     <div class="w-10 h-10 rounded-2xl bg-red-500/10 flex items-center justify-center shrink-0">
                                         <iconify-icon icon="solar:danger-triangle-bold" class="text-red-400 text-lg"></iconify-icon>
+                                        <iconify-icon icon="solar:siren-rounded-bold" class="text-red-400 text-lg"></iconify-icon>
                                     </div>
-                                    <div><p class="text-white font-semibold mb-2"> 원터치 위기 버튼 · 자동 증거 리포트 </p>
-                                        <p class="text-zinc-300 leading-relaxed text-sm">
-                                            응답이 끊겨도 현재 위치, 이동 흐름, 위험 신호를 보호자에게 자동 전달합니다.
-                                        </p>
-                                    </div>
-                                    <div class="flex items-center justify-between p-3 bg-red-50 border border-red-100 rounded-xl" style="outline: rgb(139, 92, 246) solid 3px; outline-offset: -3px;" id="el-uw7dd5r1i">
-                                        <iconify-icon icon="solar:siren-rounded-bold" class="text-red-500"></iconify-icon>
-                                        <span class="text-sm font-medium text-red-600"> 원터치 위기 버튼 · 자동 증거 리포트 </span>
-                                    </div>
-                                    
+                                    <div><p class="text-white font-semibold mb-2"> 원터치 위기 버튼 · 자동 증거 리포트 </p></div>
                                 </div>
                             </div>
                         
@@ -639,6 +631,144 @@
     </div>
 </section>
     
+
+<!-- 카톡 VS 코워카 섹션 -->
+<section id="features" class="py-16 md:py-36 relative bg-zinc-50 overflow-hidden">
+    <!-- 배경 장식 -->
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] md:w-[800px] h-[600px] md:h-[800px] bg-brand-600/5 blur-[100px] md:blur-[140px] rounded-full pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+        <!-- 헤드라인 -->
+        <div class="text-center max-w-3xl mx-auto mb-12 md:mb-20">
+            <h2 class="text-2xl md:text-5xl font-bold text-zinc-900 tracking-tight leading-snug break-keep-all mb-6">
+                “그냥 카톡 쓰면 되지 <br class="md:hidden"> 왜 굳이 이걸 써요?”
+            </h2>
+            <p class="text-lg md:text-xl text-zinc-600 break-keep-all leading-relaxed">
+                매일 수백 번 켜는 카톡은 <br>
+                우리에게 가장 익숙하고 빠른 대화 채널입니다. <span class="font-bold text-brand-600">하지만…</span>
+            </p>
+        </div>
+
+        <!-- 비교 컨테이너 -->
+        <div class="w-full lg:w-[90%] mx-auto bg-white/70 backdrop-blur-md rounded-[2.5rem] shadow-2xl border border-zinc-200/50 overflow-hidden">
+            
+            <!-- PC 레이아웃 헤더 -->
+            <div class="hidden md:grid grid-cols-[1fr_100px_1fr] bg-zinc-100/80 border-b border-zinc-200 font-bold">
+                <div class="p-6 flex items-center justify-center gap-2">
+                    <img src="kakao-talk_logo.png" alt="카톡" class="h-6">
+                    <span class="text-zinc-400 tracking-widest uppercase text-sm">카○○톡</span>
+                </div>
+                <div class="p-6 flex items-center justify-center text-zinc-400 text-sm">VS</div>
+                <div class="p-6 flex items-center justify-center">
+                    <img src="cowalka_logo.png" alt="코워카" class="h-6">
+                </div>
+            </div>
+
+            <!-- 비교 내용 -->
+            <div class="divide-y divide-zinc-200">
+                
+                <!-- 1. 일상 섹션 -->
+                <div class="grid grid-cols-1 md:grid-cols-[1fr_100px_1fr] items-stretch">
+                    <!-- 카톡 -->
+                    <div class="p-8 md:p-12">
+                        <div class="mb-4">
+                            <span class="text-xs font-bold text-zinc-400 uppercase tracking-tighter mb-1 block">카톡의 한계</span>
+                            <h3 class="text-xl font-bold text-zinc-900 mb-4">일상 대화</h3>
+                        </div>
+                        <div class="flex flex-col gap-2 mb-6 items-end">
+                            <span class="px-4 py-2 bg-zinc-100 text-zinc-600 rounded-2xl rounded-tr-none text-sm shadow-sm">"나 지금 퇴근 중이야."</span>
+                            <span class="px-4 py-2 bg-zinc-100 text-zinc-600 rounded-2xl rounded-tr-none text-sm shadow-sm">"방금 집에 잘 도착했어."</span>
+                        </div>
+                        <p class="text-zinc-500 text-sm leading-relaxed">
+                            일상적인 소통에만 집중되어 있어, 내가 먼저 신호를 보내기 전까지는 나의 안전에 무관심합니다.
+                        </p>
+                    </div>
+                    <!-- 구분 -->
+                    <div class="hidden md:flex items-center justify-center bg-zinc-50/30 border-x border-zinc-100 font-black text-zinc-200 text-xl italic">01</div>
+                    <!-- 코워카 -->
+                    <div class="p-8 md:p-12 bg-brand-50/20">
+                        <div class="mb-4">
+                            <span class="text-xs font-bold text-brand-400 uppercase tracking-tighter mb-1 block">코워카의 솔루션</span>
+                            <h3 class="text-xl font-bold text-brand-600 mb-4">안전 습관 형성</h3>
+                        </div>
+                        <div class="flex flex-col gap-2 mb-6 items-end">
+                            <span class="px-4 py-2 bg-brand-600 text-white rounded-2xl rounded-tr-none text-sm shadow-md shadow-brand-200 font-medium">"휴대폰 배터리 확인 잊지 마!"</span>
+                            <span class="px-4 py-2 bg-brand-600 text-white rounded-2xl rounded-tr-none text-sm shadow-md shadow-brand-200 font-medium">"오늘도 무사히 귀가하자!"</span>
+                        </div>
+                        <p class="text-zinc-800 text-sm leading-relaxed font-medium">
+                            퇴근 2시간 전 먼저 대화를 걸어 안전 상태를 챙기고, 실시간 안심 경로를 동행합니다.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 2. 불안 섹션 -->
+                <div class="grid grid-cols-1 md:grid-cols-[1fr_100px_1fr] items-stretch">
+                    <div class="p-8 md:p-12">
+                        <div class="mb-4">
+                            <span class="text-xs font-bold text-zinc-400 uppercase tracking-tighter mb-1 block">카톡의 한계</span>
+                            <h3 class="text-xl font-bold text-zinc-900 mb-4">심리적 장벽</h3>
+                        </div>
+                        <div class="flex flex-col gap-2 mb-6 items-end">
+                            <span class="px-4 py-2 bg-zinc-100 text-zinc-500 rounded-2xl rounded-tr-none text-sm">"이 시간에 연락하면 민폐겠지?"</span>
+                            <span class="px-4 py-2 bg-zinc-100 text-zinc-500 rounded-2xl rounded-tr-none text-sm">"나만 너무 예민한가..."</span>
+                        </div>
+                        <p class="text-zinc-500 text-sm">
+                            연결되어 있으면서도 여전히 불안을 혼자 견뎌내야 하는 사회적 거리감이 존재합니다.
+                        </p>
+                    </div>
+                    <div class="hidden md:flex items-center justify-center bg-zinc-50/30 border-x border-zinc-100 font-black text-zinc-200 text-xl italic">02</div>
+                    <div class="p-8 md:p-12 bg-brand-50/40">
+                        <div class="mb-4">
+                            <span class="text-xs font-bold text-brand-400 uppercase tracking-tighter mb-1 block">코워카의 솔루션</span>
+                            <h3 class="text-xl font-bold text-brand-600 mb-4">주체적인 대응</h3>
+                        </div>
+                        <div class="flex flex-col gap-2 mb-6 items-end">
+                            <span class="px-4 py-2 bg-brand-600 text-white rounded-2xl rounded-tr-none text-sm shadow-md">"오늘따라 골목이 너무 어둡네."</span>
+                            <span class="px-4 py-2 bg-brand-600 text-white rounded-2xl rounded-tr-none text-sm shadow-md">"누가 따라오는 것 같아."</span>
+                        </div>
+                        <p class="text-zinc-800 text-sm font-medium">
+                            불안이 섞인 짧은 한마디면 충분합니다. 즉시 <span class="border-b-2 border-brand-300 pb-0.5">위기 대비 모드</span>로 전환하여 당신을 백업합니다.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 3. 위험 섹션 -->
+                <div class="grid grid-cols-1 md:grid-cols-[1fr_100px_1fr] items-stretch">
+                    <div class="p-8 md:p-12">
+                        <div class="mb-4">
+                            <span class="text-xs font-bold text-zinc-400 uppercase tracking-tighter mb-1 block">카톡의 한계</span>
+                            <h3 class="text-xl font-bold text-zinc-900 mb-4">대응 불가능</h3>
+                        </div>
+                        <div class="bg-zinc-50 text-zinc-400 p-5 rounded-2xl text-sm border border-zinc-100 italic">
+                            상대방의 확인을 기다려야 하는 <br> 수동적인 메신저의 한계
+                        </div>
+                        <p class="mt-4 text-zinc-500 text-sm leading-relaxed">
+                            갑작스러운 위협 상황에서 지인에게 상황을 설명하고 전송할 여유는 존재하지 않습니다.
+                        </p>
+                    </div>
+                    <div class="hidden md:flex items-center justify-center bg-zinc-50/30 border-x border-zinc-100 font-black text-zinc-200 text-xl italic">03</div>
+                    <div class="p-8 md:p-12 bg-brand-600/5">
+                        <div class="mb-4">
+                            <span class="text-xs font-bold text-brand-400 uppercase tracking-tighter mb-1 block">코워카의 솔루션</span>
+                            <h3 class="text-xl font-bold text-brand-600 mb-4">즉시 대응 시스템</h3>
+                        </div>
+                        <div class="bg-brand-600 text-white p-5 rounded-2xl text-sm font-bold shadow-xl shadow-brand-600/20 mb-4">
+                             원터치 위기 버튼 & 자동 증거 리포트
+                        </div>
+                        <p class="text-zinc-800 text-sm font-bold leading-relaxed">
+                            망설임 없는 버튼 하나로 자동 리포트를 생성하고, 지체 없이 보호자와 경찰에게 구조 신호를 보냅니다.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
     
 <!-- 카톡 VS 코워카 -->
 <section id="features" class="py-24 md:py-36 relative bg-surface-100 overflow-hidden">
