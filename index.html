@@ -269,28 +269,9 @@
                                             이제 퇴근할 시간이네. 출발해볼까?</p>
                                     </div>
                                     <div class="self-start max-w-[85%] bg-white border border-zinc-100 rounded-2xl rounded-tl-sm px-4 py-3 shadow-sm">
-                                        <div class="flex items-center gap-2 mb-2">
-                                            <div class="w-6 h-6 rounded-full bg-green-50 border border-green-100 flex items-center justify-center">
-                                                <iconify-icon icon="solar:routing-2-bold" class="text-xs text-green-500"></iconify-icon>
-                                            </div>
-                                            <span class="text-[14px] font-semibold text-zinc-900">안심 경로 안내</span>
-                                        </div>
-                                        <p class="text-[14px] text-zinc-600 leading-snug break-keep-all">밝고 사람이 많은 큰길 위주로 안내할게. 집에 도착할 때까지 곁에 있을거야. 안심해!</p>
-                                        </div>
-                                        <div class="self-end max-w-[85%] bg-brand-700/40 rounded-2xl rounded-tr-sm px-4 py-3 shadow-md shadow-brand-500/20">
-                                            <p class="text-[14px] text-zinc-700 leading-snug break-keep-all">응, 고마워</p>
-                                        </div>
-
-<!-- 선이 포함된 시간 구분선 -->
-<div class="relative flex py-2 items-center">
-    <div class="flex-grow border-t border-zinc-300"></div>
-        <span class=" text-zinc-500 text-[11px] px-3 py-1 rounded-full font-medium tracking-wider">오후 8:00</span>
-    <div class="flex-grow border-t border-zinc-300"></div>
-</div>
-
 
                                     <!-- 지도 컨테이너: 채팅창 너비와 동일하게 설정 -->
-                                    <div class="relative w-full h-48 md:h-56 rounded-2xl overflow-hidden mb-3 border border-zinc-200 shadow-inner">
+                                    <div class="relative w-full  rounded-2xl overflow-hidden mb-3 border border-zinc-200 shadow-inner">
                                         <!-- 지도 위 오버레이 (경로 선 표현) -->
                                         <svg class="absolute inset-0 w-full h-full pointer-events-none" preserveAspectRatio="none">
                                             <path d="M 40 160 Q 120 140 180 80 T 320 40" fill="none" stroke="#059669" stroke-width="4" stroke-dasharray="8" stroke-linecap="round" class="animate-[dash_2s_linear_infinite]" />
@@ -322,6 +303,28 @@
                                             to { stroke-dashoffset: -16; }
                                         }
                                     </style>
+
+
+                                        
+                                        <div class="flex items-center gap-2 mb-2">
+                                            <div class="w-6 h-6 rounded-full bg-green-50 border border-green-100 flex items-center justify-center">
+                                                <iconify-icon icon="solar:routing-2-bold" class="text-xs text-green-500"></iconify-icon>
+                                            </div>
+                                            <span class="text-[14px] font-semibold text-zinc-900">안심 경로 안내</span>
+                                        </div>
+                                        <p class="text-[14px] text-zinc-600 leading-snug break-keep-all">밝고 사람이 많은 큰길 위주로 안내할게. 집에 도착할 때까지 곁에 있을거야. 안심해!</p>
+                                        </div>
+                                        <div class="self-end max-w-[85%] bg-brand-700/40 rounded-2xl rounded-tr-sm px-4 py-3 shadow-md shadow-brand-500/20">
+                                            <p class="text-[14px] text-zinc-700 leading-snug break-keep-all">응, 고마워</p>
+                                        </div>
+
+<!-- 선이 포함된 시간 구분선 -->
+<div class="relative flex py-2 items-center">
+    <div class="flex-grow border-t border-zinc-300"></div>
+        <span class=" text-zinc-500 text-[11px] px-3 py-1 rounded-full font-medium tracking-wider">오후 8:00</span>
+    <div class="flex-grow border-t border-zinc-300"></div>
+</div>
+
 
                                     
                                     <!-- 퇴근 시간 대 -->
