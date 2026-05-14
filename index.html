@@ -228,7 +228,7 @@
 
 <style>
     .chat-animation-track {
-        animation: scrollChat 34s linear infinite;
+        animation: scrollChat 36s linear infinite;
     }
 
     /* 마우스를 올리면 잠시 멈추게 하고 싶을 때 */
@@ -242,7 +242,7 @@
         }
         100% {
             /* 원본 높이만큼 위로 올림 */
-            transform: translateY(-100%);
+            transform: translateY(-50%);
         }
     }
 </style>
@@ -252,6 +252,8 @@
 <div class="relative z-10 h-[500px] overflow-y-auto px-6 py-4 flex flex-col gap-4 [ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
     <div class="chat-animation-track flex flex-col gap-4">
         <div class="flex flex-col gap-4">
+
+            
                               <!-- Chat Bubbles -->
                                     <!-- 선이 포함된 시간 구분선 -->
                                     <div class="relative flex py-2 items-center">
@@ -693,9 +695,6 @@
     </div>
 </div>
 
-
-
-                                
 
                                 
                                 
