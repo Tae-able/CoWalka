@@ -352,8 +352,9 @@
                                         </p>
                                     </div>
 
-                                    <div class="self-start max-w-[85%] bg-white px-4 py-3 bg-red-50 text-red-600 rounded-2xl shadow-sm border border-red-100">
-                                        <!-- 빨간 원(패닉링) 버튼 영역 -->
+                                    
+                                    <!-- 빨간 원(패닉링) 버튼 영역 -->
+                                    <div class="self-start max-w-[85%] flex gap-3  bg-white px-4 py-3 bg-red-50 text-red-600 rounded-2xl shadow-sm border border-red-100">
                                         <div class="relative w-16 h-16 flex items-center justify-center shrink-0">
                                             <!-- 맥박처럼 퍼지는 애니메이션 링 -->
                                             <div class="absolute w-full h-full rounded-full border border-red-500/20 animate-pulse-ring" style="animation-duration: 2.5s;"></div>
@@ -693,7 +694,43 @@
                             <div class="h-10 flex items-center justify-center overflow-hidden">
                                             <img src="cowalka_face.png" alt="코워카_얼굴" class="w-full h-full object-cover">
                             </div>
-                            <span class="px-4 py-2 bg-brand-700 text-white rounded-2xl rounded-tl-none text-sm shadow-md">언제든 위험하면 버튼을 눌러줘.</span>
+                            <span class="px-4 py-2 bg-brand-700 text-white rounded-2xl rounded-tl-none text-sm shadow-md">언제든 불안하면 버튼을 눌러줘.</span>
+
+
+                                <!-- 빨간 원(패닉링) 버튼 영역 -->                            
+                                <div class="self-start max-w-[85%] flex gap-3 bg-white px-4 py-3 bg-red-50 text-red-600 rounded-2xl shadow-sm border border-red-100">
+                                        <div class="relative w-16 h-16 flex items-center justify-center shrink-0">
+                                            <!-- 맥박처럼 퍼지는 애니메이션 링 -->
+                                            <div class="absolute w-full h-full rounded-full border border-red-500/20 animate-pulse-ring" style="animation-duration: 2.5s;"></div>
+                                            <div class="absolute w-[80%] h-[80%] rounded-full border border-red-500/40 animate-pulse-ring" style="animation-duration: 2.5s; animation-delay: 0.5s;"></div>
+                                            
+                                            <!-- 실제 버튼 (지문 아이콘 포함) -->
+                                            <div class="w-10 h-10 rounded-full bg-gradient-to-br from-red-500 to-red-700 flex items-center justify-center shadow-[0_0_15px_rgba(239,68,68,0.4)] relative z-10 cursor-pointer transition-transform hover:scale-105 active:scale-95">
+                                                <iconify-icon icon="solar:fingerprint-bold" class="text-white text-xl"></iconify-icon>
+                                            </div>
+                                        </div>
+                                    
+                                        <!-- 텍스트 설명 영역 -->
+                                        <div class="flex flex-col gap-0.5">
+                                            <p class="text-xs font-bold text-red-400 uppercase tracking-tight">Emergency</p>
+                                            <p class="text-[15px] font-extrabold leading-tight tracking-tight">
+                                                패닉링
+                                            </p>
+                                            <p class="text-[11px] text-red-500/70 font-medium"> 꼭 눌러서 보호 시작 </p>
+                                        </div>
+                                    </div>
+                                    
+                                    <style>
+                                        /* 링이 퍼져나가는 애니메이션 정의 */
+                                        @keyframes pulse-ring {
+                                            0% { transform: scale(0.6); opacity: 1; }
+                                            100% { transform: scale(1.4); opacity: 0; }
+                                        }
+                                        .animate-pulse-ring {
+                                            animation: pulse-ring cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+                                        }
+                                    </style>
+                            
                             <div class="flex items-center gap-3 px-4 py-3 bg-red-50 text-red-600 rounded-2xl rounded-tl-none shadow-sm border border-red-100">
                                 <div class="w-8 h-8 rounded-xl bg-red-500/10 flex items-center justify-center shrink-0">
                                     <iconify-icon icon="solar:siren-rounded-bold" class="text-red-500 text-lg"></iconify-icon>
