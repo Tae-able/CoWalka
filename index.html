@@ -228,10 +228,10 @@
 
 <style>
     .chat-animation-track {
-        animation: scrollChat 20s linear infinite;
+        animation: scrollChat 15s linear infinite;
     }
 
-    /* 마우스를 올리면 잠시 멈추게 하고 싶을 때 (선택사항) */
+    /* 마우스를 올리면 잠시 멈추게 하고 싶을 때 */
     .chat-animation-track:hover {
         animation-play-state: paused;
     }
@@ -242,22 +242,17 @@
         }
         100% {
             /* 원본 높이만큼 위로 올림 */
-            transform: translateY(-50%);
+            transform: translateY(0%);
         }
     }
 </style>
 
 
 
-<div class="relative z-10 h-[500px] overflow-hidden p-6 flex flex-col [ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
-    
+<div class="relative z-10 h-[500px] overflow-y-auto px-6 py-4 flex flex-col gap-4 [ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
     <div class="chat-animation-track flex flex-col gap-4">
         <div class="flex flex-col gap-4">
-                                                    <!-- Chat Bubbles -->
-                                <!--
-                                <div class="relative z-10 h-[500px] overflow-y-auto px-6 py-4 flex flex-col gap-4 overflow-y-auto scroll-smooth>
-                                -->
-                                <div class="relative z-10 h-[500px] overflow-y-auto px-6 py-4 flex flex-col gap-4 [ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+                              <!-- Chat Bubbles -->
                                     <!-- 선이 포함된 시간 구분선 -->
                                     <div class="relative flex py-2 items-center">
                                         <div class="flex-grow border-t border-zinc-300"></div>
@@ -473,15 +468,13 @@
                                         </p>
                                         -->
 
-                                </div>
+
+        <!-- 에니메이션 커트 -->    
         </div>
-
         <div class="flex flex-col gap-4">
+
+            
                                                     <!-- Chat Bubbles -->
-                                <!--
-                                <div class="relative z-10 h-[500px] overflow-y-auto px-6 py-4 flex flex-col gap-4 overflow-y-auto scroll-smooth>
-                                -->
-                                <div class="relative z-10 h-[500px] overflow-y-auto px-6 py-4 flex flex-col gap-4 [ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
                                     <!-- 선이 포함된 시간 구분선 -->
                                     <div class="relative flex py-2 items-center">
                                         <div class="flex-grow border-t border-zinc-300"></div>
@@ -696,8 +689,6 @@
                                             더 안전한 내일의 퇴근길을 위해 소중히 보관할게!
                                         </p>
                                         -->
-
-                                </div>
         </div>
     </div>
 </div>
