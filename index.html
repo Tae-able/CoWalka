@@ -162,8 +162,10 @@
                 <!-- Text Content -->
                 <div class="lg:col-span-7 flex flex-col items-start text-left">
                     <h1 class="reveal text-5xl md:text-5xl lg:text-6xl font-bold text-zinc-900 tracking-tight leading-[1.15] break-keep-all mb-8">
-                        <span class="text-brand-600 relative inline-block">오후 4시,</span> 퇴근 준비 시작<br>
-                        코워카와 함께 <span class="text-brand-600 relative inline-block"> 무사히 도착</span>
+                        <span class="text-brand-600 relative inline-block">오후 4시,</span>
+                        <br class="block md:hidden">퇴근 준비 시작<br>
+                        코워카와 함께 
+                        <br class="block md:hidden"><span class="text-brand-600 relative inline-block"> 무사히 도착</span>
                     </h1>
                     
                     <p class="reveal text-lg md:text-xl text-zinc-500 leading-relaxed max-w-[45ch] break-keep-all mb-10">
@@ -265,12 +267,14 @@
                                         <div class="flex-grow border-t border-zinc-300"></div>
                                     </div>
                                     
-                                    <div class="self-start max-w-[85%] bg-white border border-zinc-100 rounded-2xl rounded-tl-sm px-4 py-3 shadow-sm">
+                                    <div class="self-start max-w-[85%] bg-white border border-zinc-100 rounded-2xl rounded-tl-sm px-4 py-2 shadow-sm">
                                         <p class="text-[14px] text-zinc-700 leading-snug break-keep-all">
                                             벌써 4시야. 슬슬 퇴근 준비 할까?<br>
                                             우선 휴대폰 배터리부터 충전해!</p>
                                     </div>
-                                    <div class="self-end max-w-[85%] bg-brand-700/40 rounded-2xl rounded-tr-sm px-4 py-3 shadow-md shadow-brand-500/20">
+                                    <div class="self-end max-w-[85%] bg-brand-700/40 rounded-2xl rounded-tr-sm px-4 py-2 shadow-md shadow-brand-500/20">
+                                        class="px-4 py-2.5 bg-[#FFF2EB] text-zinc-900 border border-[#FFD0B8] rounded-2xl rounded-tl-none text-sm font-medium shadow-sm shadow-orange-100/50 block w-fit">
+
                                         <p class="text-[14px] text-zinc-700 leading-snug break-keep-all">
                                             아 맞다. 10% 밖에 없네.<br> 지금 충전했어!</p>
                                     </div>
@@ -1061,7 +1065,6 @@
                                 언제든 불안하면 버튼을 눌러줘.
                             </span>
 
-
                                 <!-- 빨간 원(패닉링) 버튼 영역 -->                            
                                 <div class="self-start max-w-[85%] flex bg-white px-4 py-3 bg-red-50 text-red-600 rounded-2xl shadow-sm border border-red-100">
                                         <div class="relative w-16 h-16 flex items-center justify-center shrink-0">
@@ -1127,6 +1130,15 @@
                                             <img src="cowalka_face.png" alt="코워카_얼굴" class="w-full h-full object-cover">
                             </div>
 
+현재 위치 확인 중
+이동경로 수집 중
+주변 소리음 녹음 시작합니다.
+
+                            <span class="px-4 py-2 bg-brand-700 text-white border border-[#E05E00] rounded-2xl rounded-tl-none text-sm font-medium shadow-sm shadow-orange-200/40 block w-fit">
+                                언제든 불안하면 버튼을 눌러줘.
+                            </span>
+
+                            
                                 <!-- Alert Banner -->
                                     <div class="bg-red-500 rounded-xl p-3 flex items-center gap-3 mb-4 shadow-[0_0_20px_rgba(239,68,68,0.3)] mx-1">
                                         <div class="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center shrink-0">
