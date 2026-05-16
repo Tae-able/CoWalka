@@ -1130,34 +1130,71 @@
                                             <img src="cowalka_face.png" alt="코워카_얼굴" class="w-full h-full object-cover">
                             </div>
 
-현재 위치 확인 중
-이동경로 수집 중
-주변 소리음 녹음 시작합니다.
+                            <div class="relative max-w-[360px] mx-auto px-4 py-6">
+    <div class="absolute left-[27px] top-10 bottom-16 w-[2px] bg-brand-500/30"></div>
 
-                            <span class="px-4 py-2 bg-brand-700 text-white border border-[#E05E00] rounded-2xl rounded-tl-none text-sm font-medium shadow-sm shadow-orange-200/40 block w-fit">
-                                언제든 불안하면 버튼을 눌러줘.
-                            </span>
+    <div class="relative flex items-start gap-4 mb-8">
+        <div class="w-6 h-6 rounded-full border-2 border-[#FF7900] bg-white flex items-center justify-center shrink-0 z-10 mt-0.5 shadow-sm">
+            <span class="w-2 h-2 rounded-full bg-[#FF7900] animate-pulse"></span>
+        </div>
+        <div class="flex-1">
+            <p class="text-zinc-800 text-[14px] font-semibold">현재 위치 확인 중 입니다...</p>
+            <div class="flex gap-1 mt-1.5 pl-0.5">
+                <span class="w-1 h-1 rounded-full bg-[#FF7900]/80 animate-bounce"></span>
+                <span class="w-1 h-1 rounded-full bg-[#FF7900]/50 animate-bounce [animation-delay:0.2s]"></span>
+                <span class="w-1 h-1 rounded-full bg-[#FF7900]/30 animate-bounce [animation-delay:0.4s]"></span>
+            </div>
+        </div>
+    </div>
 
-                            
+    <div class="relative flex items-start gap-4 mb-8">
+        <div class="w-6 h-6 rounded-full border-2 border-[#FF7900] bg-white flex items-center justify-center shrink-0 z-10 mt-0.5 shadow-sm">
+            <span class="w-2 h-2 rounded-full bg-[#FF7900] animate-pulse"></span>
+        </div>
+        <div class="flex-1">
+            <p class="text-zinc-800 text-[14px] font-semibold">이동경로 수집 중 입니다...</p>
+            <div class="flex gap-1 mt-1.5 pl-0.5">
+                <span class="w-1 h-1 rounded-full bg-[#FF7900]/80 animate-bounce"></span>
+                <span class="w-1 h-1 rounded-full bg-[#FF7900]/50 animate-bounce [animation-delay:0.2s]"></span>
+                <span class="w-1 h-1 rounded-full bg-[#FF7900]/30 animate-bounce [animation-delay:0.4s]"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="relative flex items-start gap-4 mb-6">
+        <div class="w-6 h-6 rounded-full border-2 border-[#FF7900] bg-white flex items-center justify-center shrink-0 z-10 mt-0.5 shadow-sm">
+            <span class="w-2 h-2 rounded-full bg-[#FF7900] animate-pulse"></span>
+        </div>
+        <div class="flex-1">
+            <p class="text-zinc-800 text-[14px] font-semibold">주변 소리음 녹음 시작합니다...</p>
+            <div class="flex gap-1 mt-1.5 pl-0.5">
+                <span class="w-1 h-1 rounded-full bg-[#FF7900]/80 animate-bounce"></span>
+                <span class="w-1 h-1 rounded-full bg-[#FF7900]/50 animate-bounce [animation-delay:0.2s]"></span>
+                <span class="w-1 h-1 rounded-full bg-[#FF7900]/30 animate-bounce [animation-delay:0.4s]"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-[#FF7900] rounded-2xl p-3.5 flex items-center gap-3 shadow-[0_10px_25px_rgba(255,121,0,0.25)] mx-1 relative z-10">
+        <div class="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center shrink-0">
+            <iconify-icon icon="solar:check-circle-bold" class="text-white text-xl"></iconify-icon>
+        </div>
+        <div class="flex-1">
+            <p class="text-white text-[15px] font-bold leading-tight">자동 증거 리포트 전송 완료</p>
+            <p class="text-orange-100 text-[12.5px] mt-0.5 leading-normal">보호자에게 당신의 패닉 리포트가 자동으로 전송되었습니다.</p>
+        </div>
+    </div>
+</div>
                                 <!-- Alert Banner -->
-                                    <div class="bg-red-500 rounded-xl p-3 flex items-center gap-3 mb-4 shadow-[0_0_20px_rgba(239,68,68,0.3)] mx-1">
+                                    <div class="bg-red-500 rounded-xl p-3 flex items-start gap-3 mb-4 shadow-[0_0_20px_rgba(239,68,68,0.3)] mx-1">
                                         <div class="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center shrink-0">
                                             <iconify-icon icon="solar:danger-triangle-bold" class="text-white text-lg"></iconify-icon>
                                         </div>
                                         <div class="flex-1">
-                                            <p class="text-white text-[11px] font-bold leading-tight">자동 증거 리포트 전송 완료</p>
-                                            <p class="text-red-100 text-[10px] mt-0.5">보호자에게 당신의 패닉 리포트가 자동으로 전송되었습니다.</p>
+                                            <p class="text-white text-[15px] font-bold leading-tight">자동 증거 리포트 전송 완료</p>
+                                            <p class="text-red-100 text-[13px] mt-0.5">보호자에게 당신의 패닉 리포트가 자동으로 전송되었습니다.</p>
                                         </div>
                                     </div>
-                                <!--
-                                <div class="flex flex-col items-center gap-3 px-4 py-3 bg-red-50 text-red-600 rounded-2xl shadow-sm border border-red-100">
-                                    <div class="w-8 h-8 rounded-xl bg-red-500/10 flex items-center justify-center shrink-0"> 
-                                        <iconify-icon icon="solar:danger-triangle-bold" class="text-red-500 text-lg"></iconify-icon>
-                                        <p class="text-[15px] font-extrabold tracking-tight"> 자동 증거 리포트 전송 완료 </p>
-                                    </div>
-                                    <p class="text-[14px] text-red-500/70 font-medium"> 보호자에게 당신의 패닉 리포트가 자동으로 전송되었습니다. </p>
-                                </div>
-                                -->
                         </div>
                             
                         <p class="text-zinc-800 text-sm font-bold leading-relaxed">
