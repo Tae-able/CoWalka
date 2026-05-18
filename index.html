@@ -193,6 +193,24 @@
                 
                 <!-- Visual Mockup (Light Mode Double Bezel) -->
                 <div class="lg:col-span-4 relative reveal">
+
+<style>
+    /* 모바일에서는 평범하게 보이다가, 768px(md) 이상 화면에서만 애니메이션 작동 */
+@media (min-width: 768px) {
+  .reveal {
+    /* 기존에 작성해 두었던 reveal 관련 애니메이션/효과 코드들 */
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s ease-out;
+  }
+  
+  .reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+</style>
+                    
                     <!-- 코워카 빼꼼 -->
             <!--
                     <div class="absolute -right-16 md:-right-20 bottom-10 lg:bottom-16 z-20 w-32 md:w-44 lg:w-56 animate-float transition-all duration-500 pointer-events-none">
