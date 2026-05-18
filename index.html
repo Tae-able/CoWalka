@@ -1222,19 +1222,21 @@
     </div>
 </div>
                             <!-- Alert Banner -->
-                            <div class="max-w-[85%] bg-red-500 rounded-xl px-3 py-2 flex items-start gap-3 mb-2 shadow-[0_0_20px_rgba(239,68,68,0.3)] mx-1">
-                                <div class="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center shrink-0">
-                                     <iconify-icon icon="solar:check-circle-bold" class="text-white text-xl"></iconify-icon>
+                            <div class="absolute inset-0 z-10 flex flex-col justify-end">
+                                <div class="max-w-[85%] bg-red-500 rounded-xl p-3 flex items-start gap-3 mb-2 shadow-[0_0_20px_rgba(239,68,68,0.3)] mx-1">
+                                    <div class="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center shrink-0">
+                                         <iconify-icon icon="solar:check-circle-bold" class="text-white text-xl"></iconify-icon>
+                                    </div>
+                                    <div class="flex-1">
+                                        <p class="text-white text-[13px] font-bold leading-tight">자동 증거 리포트 전송 완료</p>
+                                        <p class="text-red-100 text-[11px] mt-0.5">
+                                            보호자에게 당신의 패닉 리포트가<br>
+                                            자동으로 전송되었습니다.</p>
+                                    </div>
                                 </div>
-                                <div class="flex-1">
-                                    <p class="text-white text-[13px] font-bold leading-tight">자동 증거 리포트 전송 완료</p>
-                                    <p class="text-red-100 text-[11px] mt-0.5">
-                                        보호자에게 당신의 패닉 리포트가<br>
-                                        자동으로 전송되었습니다.</p>
-                                </div>
-                            </div> 
+                            </div>
+
                         </div>
-                            
                         <p class="text-zinc-800 text-sm leading-relaxed font-medium">
                             <span class="text-red-600 relative inline-block">원 터치 위기 버튼</span> 하나로
                             <span class="text-red-600 relative inline-block">자동 증거 리포트</span>를<br>
@@ -1386,7 +1388,7 @@
                                         </div>
                                         <div class="flex-1">
                                             <p class="text-white text-[11px] font-bold leading-tight">패닉 리포트 전송 완료</p>
-                                            <p class="text-red-100 text-[10px] mt-0.5">보호자에게 당신의 패닉 리포트가 자동으로 전송되었습니다.</p>
+                                            <p class="text-red-100 text-[10px] mt-0.5">보호자에게 당신의 패닉 리포트가<br>자동으로 전송되었습니다.</p>
                                         </div>
                                     </div>
                                     
@@ -1461,8 +1463,8 @@
         <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
             <h2 class="reveal text-[21px] md:text-4xl font-bold text-zinc-900 tracking-tight leading-snug break-keep-all mb-6">
                 휴대폰 충전부터 위기 상황 보호자 알림까지.<br>
-                다정한 쿼카 <span class="text-brand-600 relative inline-block">코워카</span>가<br class="block md:hidden">
-                오늘의 귀갓길을 챙겨드려요.
+                다정한 쿼카 <span class="text-brand-600 relative inline-block">코워카</span>가 오늘의 귀갓길을<br class="block md:hidden">
+                챙겨드려요.
             </h2>
             <p class="reveal text-zinc-500 text-lg break-keep-all mb-10 max-w-2xl mx-auto"></p>
             <a href="./coming-soon-free.html" class="reveal inline-flex items-center justify-center rounded-full bg-zinc-900 px-8 py-4 text-lg font-bold text-white cowalka-transition hover:bg-zinc-800 hover:scale-[1.02] active:scale-[0.98] shadow-lg">
@@ -1480,7 +1482,7 @@
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="mb-10 md:mb-20 flex flex-col md:flex-row md:items-end justify-between gap-8">
       <div class="max-w-2xl">
-        <h2 class="text-[31px] md:text-5xl font-bold text-zinc-900 tracking-tight leading-snug break-keep-all">
+        <h2 class="text-[30px] md:text-5xl font-bold text-zinc-900 tracking-tight leading-snug break-keep-all">
           일상을 되찾은 사람들의 이야기
         </h2>
       </div>
@@ -1893,9 +1895,10 @@
     <section id="pricing" class="py-24 md:py-36 relative bg-white border-t border-zinc-200">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-26">
-                <h2 class="reveal text-[21px] md:text-5xl font-bold text-zinc-900 mb-10">
-                    늦은 밤, 한 번이라도 뒤돌아본 적 있다면<br>
-                    <span class="text-zinc-900 font-bold relative inline-block">월 1,900원</span>으로 내일의 안심을 준비하세요.</h2>
+                <h2 class="reveal text-[31px] md:text-5xl font-bold text-zinc-900 mb-10">
+                    늦은 밤, 한 번이라도<br class="block md:hidden"> 뒤돌아본 적 있다면<br>
+                    <span class="text-zinc-900 font-bold relative inline-block">월 1,900원</span>으로 내일의 안심을<br class="block md:hidden">
+                    준비하세요.</h2>
             </div>
 
             <!-- Price Width (Size) -->
@@ -1907,7 +1910,7 @@
                     <ul class="space-y-4 mb-10 flex-1">
                         <li class="flex items-center gap-3 text-zinc-600" style="" id="el-x90a3zbq6">
                             <iconify-icon icon="solar:check-circle-bold" class="text-zinc-600 text-xl"></iconify-icon>
-                            가상 챗봇 <span class="text-brand-600">코워카</span>
+                            가상 챗봇 <span class="text-brand-600 relative inline-block">코워카</span>
                         </li>
                         <li class="flex items-center gap-3 text-zinc-600">
                             <iconify-icon icon="solar:check-circle-bold" class="text-zinc-600 text-xl"></iconify-icon>
@@ -1958,7 +1961,7 @@
         <!-- Abstract Soft Shapes -->
         <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-radial from-white via-white/50 to-transparent pointer-events-none"></div>
         <div class="max-w-4xl mx-auto px-4 relative z-10">
-            <h1 class="reveal text-4xl md:text-6xl font-bold text-zinc-900 tracking-[-0.06em] md:tracking-tighter leading-snug break-keep-all mb-8">
+            <h1 class="reveal text-4xl md:text-6xl font-bold text-zinc-900 tracking-[-0.05em] md:tracking-tighter leading-snug break-keep-all mb-8">
                 어떤 길도<br>혼자가 아니도록
             </h1>
             <p class="reveal text-lg md:text-xl text-zinc-600 mb-12 break-keep-all max-w-lg mx-auto">
